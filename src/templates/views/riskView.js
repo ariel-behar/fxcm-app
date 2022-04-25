@@ -50,7 +50,9 @@ let riskViewTemplate = html`
 
                     <span class="small-num">+653.61 (+2,00%)</span>
                 </header>
-                <div></div>
+                <div>
+                    <img src="images/dummy-graph.png" alt="Dummy graph" />
+                </div>
             </div>
             <div class="risk-page__article__charts-instruments">
                 <p>
@@ -171,14 +173,12 @@ let riskViewTemplate = html`
                         ;
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="..." class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>

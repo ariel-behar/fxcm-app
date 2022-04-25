@@ -84,11 +84,30 @@
 
         //Graph Article
         &:nth-child(2) {
+            header {
+                background-color: yellow;
+                display: flex;
+                justify-content: space-between;
+                
+                .dropdown-toggle {
+                    background-color: $header-footer-color;
+                }
+
+                .big-num {
+                    color: $header-footer-color;
+                    font-size: 2rem;
+                }
+                .small-num {
+                    color: $profit-color;
+                    font-size: 0.9rem;
+                }
+            }
+            
             .risk-page__article__charts-instruments {
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
-                margin: 10px 0 ;
+                margin: 10px 0;
                 padding-left: 10px;
                 a {
                     color: $header-footer-color;
@@ -102,23 +121,38 @@
                     color: #101418;
                 }
             }
-
-            header {
-                .dropdown-toggle {
-                    background-color: $header-footer-color;
-                }
-            }
         }
 
         //Top Movers article
         &:last-child {
             .carousel.carousel-dark.slide {
                 height: 100%;
+                .carousel-indicators {
+                    bottom: -35px;
+
+                    [data-bs-target] {
+                        background-color: none;
+                        box-sizing: border-box;
+                    }
+                    button {
+                        margin: 0 5px;
+                        color: $header-footer-color;
+                        text-indent: 0;
+                    }
+                }
                 .carousel-inner {
                     height: 100%;
+
                     .carousel-item {
                         height: 100%;
                     }
+                }
+
+                button.carousel-control-prev {
+                    left: -70px;
+                }
+                button.carousel-control-next {
+                    right: -70px;
                 }
             }
         }
