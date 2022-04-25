@@ -2,9 +2,9 @@ import { render } from "../../node_modules/lit-html/lit-html.js";
 import navView from "../templates/header/navView.js";
 import footerView from '../templates/footer/footerView.js'
 
-let headerContainer = document.getElementById('site-header');
-let mainContainer = document.getElementById('site-content');
-let footerContainer = document.getElementById('site-footer');
+let headerContainer = document.querySelector('#site-header div:first-child');
+let mainContainer = document.querySelector('#site-content div:first-child');
+let footerContainer = document.querySelector('#site-footer div:first-child');
 
 let renderPage = (templateResult) =>{
     render(templateResult, mainContainer);
