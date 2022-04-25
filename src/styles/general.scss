@@ -9,7 +9,12 @@ body {
 #site-content {
     flex-grow: 1;
     padding: 20px 0;
+
+    .container {
+        height: 100%
+    }
 }
 
-@import './viewStyles/header.scss';
-@import './viewStyles/footer.scss';
+@import './viewStyles/header/header.scss';
+@import './viewStyles/riskView.scss';
+@import './viewStyles/footer/footer.scss';
