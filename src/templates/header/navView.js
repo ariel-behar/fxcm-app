@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 let navTemplate = html`
-    <nav id="top-nav" class="container">
+    <nav id="top-nav">
             <img src="images/logo.svg" alt="FXCM logo" />
         <ul>
             <li><a href="/risk" class="active">Risk</a></li>
