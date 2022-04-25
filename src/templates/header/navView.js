@@ -1,10 +1,8 @@
-import { html } from '../../../node_modules/lit-html/lit-html.js';
+import { html } from 'lit-html';
 
 let navTemplate = html`
     <nav id="top-nav" class="container">
-        <div>
             <img src="images/logo.svg" alt="FXCM logo" />
-        </div>
         <ul>
             <li><a href="/risk" class="active">Risk</a></li>
             <li><a href="/dealing">Dealing</a></li>
@@ -16,6 +14,6 @@ let navTemplate = html`
     </nav>
 `;
 
-export function navView(ctx) {
+export default function navView(ctx) {
     return navTemplate;
 }

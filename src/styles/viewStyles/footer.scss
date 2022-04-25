@@ -1,0 +1,14 @@
+#site-footer {
+    background-color: $header-footer-color;
+    color: $header-nav-links-color;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-bottom: 0;
+    }
+
+}
