@@ -1,8 +1,6 @@
 #site-header {
     background-color: $header-footer-color;
-    height: 13vh;
-
-    padding: 20px 0;
+    height: 11vh;
 
     nav {
         display: flex;
@@ -11,8 +9,10 @@
         align-items: center;
         align-content: center;
 
+        height: 100%;
+
         img {
-            max-height: 80px;
+            max-height: 70px;
         }
 
         ul {
@@ -38,7 +38,7 @@
 
                 &:last-child {
                     margin-left: 100px;
-                    
+
                     a {
                         font-size: 1.1rem;
                         font-style: italic;

@@ -6,12 +6,18 @@ body {
     height: 100vh;
 }
 
+#site-header {
+    .container {
+        height: 100%;
+    }
+}
+
 #site-content {
     flex-grow: 1;
     padding: 20px 0;
 
     .container {
-        height: 100%
+        height: 100%;
     }
 }
 
