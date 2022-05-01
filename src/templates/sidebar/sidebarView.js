@@ -8,7 +8,7 @@ function onNavHover(e) {
     nav.style.width = '300px';
 
     spans.forEach(span => {
-        span.style.transition = 'all 3s';
+        span.style.transition = 'all 1s';
         span.style.transitionDelay = '0.8s';
         span.style.opacity = 1;
         setTimeout(() => {
