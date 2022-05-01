@@ -1,9 +1,11 @@
 body {
     background-color: $body-color;
+    height: 100vh;
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
 }
 
 #site-header {
@@ -14,7 +16,10 @@ body {
 
 #site-content {
     flex-grow: 1;
-    padding: 20px 0;
+
+    .site-content-container {
+        padding: 20px 0;
+    }
 
     .container {
         height: 100%;
@@ -24,3 +29,4 @@ body {
 @import './viewStyles/header/header.scss';
 @import './viewStyles/riskView.scss';
 @import './viewStyles/footer/footer.scss';
+@import './viewStyles/sidebar/sidebar.scss';

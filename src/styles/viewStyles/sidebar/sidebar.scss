@@ -1,0 +1,43 @@
+.sidebar-menu {
+    background-color: $header-footer-color;
+    box-shadow: $articles-shadow;
+    width: 40px;
+    transition: all 1s;
+
+    position: absolute;
+    height: 100vh;
+
+    ul {
+        list-style-type: none;
+        padding: 0.5rem;
+        
+        li {
+            // border-bottom: 1px solid $header-nav-links-color;
+            height: 60px;
+            a {
+                color: $header-nav-links-color;
+                text-decoration: none;
+                font-size: 1.5rem;
+                span {
+
+                    margin-left: 10px;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    // &:hover {
+    //     // width: 300px;
+        
+    //     ul {
+    //         li {
+    //             a {
+    //                 span {
+    //                     opacity: 1;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}

@@ -50,9 +50,7 @@ let riskViewTemplate = html`
 
                     <span class="small-num">+653.61 (+2,00%)</span>
                 </header>
-                <div>
-                    <img src="images/dummy-graph.png" alt="Dummy graph" />
-                </div>
+
             </div>
             <div class="risk-page__article__charts-instruments">
                 <p>
