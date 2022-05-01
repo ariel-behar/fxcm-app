@@ -48,7 +48,7 @@ let sibebarTemplate = (onNavHover, onNavOut) => html`
                 </ul>
             </li>
             <li>
-                <a href=""><i class="bi bi-file-earmark-spreadsheet"></i><span>Market Exposure xlsx</span></a>
+                <a href="/market-exposure"><i class="bi bi-file-earmark-spreadsheet"></i><span>Market Exposure xlsx</span></a>
             </li>
             <li>
                 <a href=""><i class="bi bi-bar-chart-line-fill"></i> <span>Live Risk Stats</span></a>

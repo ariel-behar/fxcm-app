@@ -1,0 +1,55 @@
+#market-exposure-page {
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+
+    form {
+        background-color: $articles-content-background-color;
+        border: $articles-border;
+        box-shadow: $articles-shadow;
+
+        padding: 20px;
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .market-exposure-main-content {
+        margin-top: 20px;
+        flex-grow: 1;
+        
+        .market-exposure-main-content__buttons {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background-color: $header-footer-color;
+                color: $header-nav-links-color;
+                border: none;
+                flex-grow: 1;
+                font-size: 1.4rem;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+
+        .market-exposure-main-content__display {
+            height: 100%;
+            
+            background-color: $articles-content-background-color;
+            border: $articles-border;
+            box-shadow: $articles-shadow;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                background-color: yellow;
+            }
+        }
+    }
+}
