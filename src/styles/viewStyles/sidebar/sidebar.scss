@@ -9,25 +9,39 @@
 
     nav {
         height: 100%;
-    }
 
-    ul {
-        list-style-type: none;
-        padding: 0.5rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-        li {
-            a {
-                color: $header-nav-links-color;
-                text-decoration: none;
-                font-size: 1.5rem;
-                span {
+        ul.primary-list {
+            list-style-type: none;
+            padding: 0.5rem;
+            height: 100%;
 
-                    margin-left: 10px;
-                    opacity: 0;
+            position: absolute;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            flex-wrap: nowrap;
+
+            
+
+            li {
+                a {
+                    color: $header-nav-links-color;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    span {
+                        margin-left: 10px;
+                        opacity: 0;
+                        display: none;
+                        
+                        &.active {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                ul {
+                    list-style: none;
                 }
             }
         }

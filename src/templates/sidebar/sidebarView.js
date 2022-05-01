@@ -8,13 +8,13 @@ function onNavHover(e) {
     nav.style.width = '300px';
 
     spans.forEach(span => {
-        span.style.transition = 'all 1s';
-        span.style.transitionDelay = '0.6s';
-        
+        span.style.transition = 'all 3s';
+        span.style.transitionDelay = '0.8s';
         span.style.opacity = 1;
-
+        setTimeout(() => {
+             span.classList.add('active');
+        }, 500);
     })
-
 }
 
 function onNavOut(e) {
@@ -27,12 +27,14 @@ function onNavOut(e) {
             span.style.transition = '0.1s';
             span.style.transitionDelay = '0s';
             span.style.opacity = 0;
+            span.classList.remove('active');
+
         });
 }
 
 let sibebarTemplate = (onNavHover, onNavOut) => html`
-    <nav @mouseover="${onNavHover}" @mouseout="${onNavOut}" class="sidebar-menu__nav">
-        <ul>
+    <nav @mouseenter="${onNavHover}" @mouseleave="${onNavOut}" class="sidebar-menu__nav">
+        <ul class="primary-list">
             <li>
                 <a href="/instruments"><i class="bi bi-arrow-down-up"></i> <span>P&L</span></a>
                 <ul>
@@ -48,7 +50,7 @@ let sibebarTemplate = (onNavHover, onNavOut) => html`
                 </ul>
             </li>
             <li>
-                <a href="/market-exposure"><i class="bi bi-file-earmark-spreadsheet"></i><span>Market Exposure xlsx</span></a>
+                <a href="/market-exposure"><i class="bi bi-file-earmark-spreadsheet"></i><span>Market Exposure</span></a>
             </li>
             <li>
                 <a href=""><i class="bi bi-bar-chart-line-fill"></i> <span>Live Risk Stats</span></a>
