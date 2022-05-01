@@ -10,7 +10,7 @@
         width: calc(50% - 30px);
         margin: 25px 30px;
         box-shadow: $articles-shadow;
-        border: 1px solid #c6c6c6;
+        border: $articles-border;
 
         .risk-page__article__content {
             background-color: $articles-content-background-color;

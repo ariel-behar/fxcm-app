@@ -1,0 +1,55 @@
+#instruments-page {
+    display: flex;
+    height: 100%;
+
+    .data-boxes-aside {
+        margin-right: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        .data-box {
+            box-shadow: $articles-shadow;
+            background-color: $articles-content-background-color;
+            border: $articles-border;
+
+            height: 150px;
+            min-width: 250px;
+
+            text-align: center;
+            padding: 20px 10px;
+        }
+    }
+
+    .instruments-main-content {
+        .instruments-main-content__buttons {
+            display: flex;
+            justify-content: space-between;
+            height: 7%;
+
+            button {
+                background-color: $header-footer-color;
+                color: $header-nav-links-color;
+                border: none;
+                flex-grow: 1;
+                font-size: 1.4rem;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+
+        .instruments-main-content__display {
+            box-shadow: $articles-shadow;
+            overflow-y: scroll;
+            margin-top: 10px;;
+            height: calc(93% - 10px);
+   
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -10,7 +10,9 @@ function onNavHover(e) {
     spans.forEach(span => {
         span.style.transition = 'all 1s';
         span.style.transitionDelay = '0.6s';
+        
         span.style.opacity = 1;
+
     })
 
 }
@@ -32,7 +34,18 @@ let sibebarTemplate = (onNavHover, onNavOut) => html`
     <nav @mouseover="${onNavHover}" @mouseout="${onNavOut}" class="sidebar-menu__nav">
         <ul>
             <li>
-                <a href=""><i class="bi bi-arrow-down-up"></i> <span>P&L</span></a>
+                <a href="/instruments"><i class="bi bi-arrow-down-up"></i> <span>P&L</span></a>
+                <ul>
+                    <li>
+                        <a href=""> <span>Total</span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span>CFD</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>FX</span></a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href=""><i class="bi bi-file-earmark-spreadsheet"></i><span>Market Exposure xlsx</span></a>

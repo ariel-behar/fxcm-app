@@ -1,7 +1,7 @@
 body {
     background-color: $body-color;
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@ body {
 
 #site-content {
     flex-grow: 1;
+    height: 81vh;
 
     .site-content-container {
         padding: 20px 0;
@@ -27,6 +28,8 @@ body {
 }
 
 @import './viewStyles/header/header.scss';
-@import './viewStyles/riskView.scss';
 @import './viewStyles/footer/footer.scss';
 @import './viewStyles/sidebar/sidebar.scss';
+
+@import './viewStyles/riskView.scss';
+@import './viewStyles/instrumentsView.scss';
